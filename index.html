@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("./pop-bg\ \(1\).jpg");
+            display: grid;
+            justify-content: center;
+            align-items: center;
+         
+        }
+        .images{
+            display: grid;
+            grid-template-areas: "image1 image2"
+                                    "image3 image4";
+       gap: 50px; 
+       position: absolute;
+       right: 10rem;  
+       top: 13rem;                     
+        }
+        .para{
+            grid-area: para;
+            font-size: 1.2rem;
+            color: white;
+        }
+        h1{
+            grid-area: h1;
+        color: white;
+        font-size: 1.5rem;
+        }
+        .line{
+            grid-area: line;
+        }
+
+        .image1{
+            grid-area: image1;
+            height: 6rem;
+            width: 6rem;
+         
+        }
+        .image2{
+            grid-area: image2;
+            height: 6rem;
+            width: 6rem;
+        }
+        .image3{
+            grid-area: image3;
+            height: 6rem;
+            width: 6rem;
+        }
+        .image4{
+            grid-area: image4;
+            height: 6rem;
+            width: 6rem;
+        }
+        .container2{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("./pop-bg\ \(1\).jpg");
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        } 
+        .box1{
+            background-color: black;
+            height: 30rem;
+            width: 50rem;
+           
+            display: grid;
+            grid-template-areas:"h1   h1"
+                                "img1 p1"
+                                "p2 img2" ;
+
+        }
+        h3{
+            grid-area: h1;
+            font-size: 1.5rem;
+          color: white;
+        }
+        .img1{
+            height: 25vh;
+            width: 30vw;
+            grid-area: img1;
+        }
+        .p1{
+            grid-area: p1;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .img2{
+            height: 25vh;
+            width: 30vw;
+            grid-area: img2;
+        }
+        .p2{
+            grid-area: p2;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .container3{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("./pop-bg\ \(1\).jpg");
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        } 
+        .box2{
+            height: 30rem;
+            width: 50rem;
+         
+            display: grid;
+            grid-template-areas:"h3 h3"
+                                "p3 img3"
+                                "p4 img3"
+                                "p5 img3";
+            background-color: black;
+        }
+        .h3{
+           color: white;
+         grid-area: h3;
+        }
+            
+        .img3{
+            grid-area: img3;
+            height: 20rem;
+            width: 10rem;
+           
+        }
+        .p3{
+            grid-area: p3;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .p4{
+            grid-area: p4;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .p5{
+            grid-area: p5;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .container4{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("./pop-bg\ \(1\).jpg");
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        } 
+        .box3{
+            background-color: black;
+            height: 30rem;
+            width: 50rem;
+           
+            display: grid;
+            grid-template-areas:"h33 h33 h33 h33"
+                                  "p6 p6 p6 p6"
+                                "img4 img5 img6 img7";
+                                
+
+        }
+        .h33{
+            color: white;
+            grid-area: h33;
+        }
+        .p6{
+            grid-area: p6;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .img4{
+            grid-area: img4;
+            height: 8rem;
+            width: 8rem;
+        }
+        .img5{
+            grid-area: img5;
+            height: 8rem;
+            width: 8rem;
+        }
+        .img6{
+            grid-area: img6;
+            height: 8rem;
+            width: 8rem;
+        }
+        .img7{
+            grid-area: img7;
+            height: 8rem;
+            width: 8rem;
+        }
+        .container5{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("./pop-bg\ \(1\).jpg");
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        } 
+        .box4{
+            background-color: black;
+            height: 30rem;
+            width: 50rem;
+            
+            display: grid;
+            grid-template-areas:"h33 h33"
+                                  "p7 p7"
+                                "inp1 inp2"
+                                "textarea textarea"
+                                "button button";
+                                
+
+        }
+        .h34{
+            color: white;
+            grid-area: h33;
+        }
+        .p7{
+            grid-area: p7;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .inp1{
+            grid-area: inp1;
+        }
+        .inp2{
+            grid-area: inp2;
+        }
+        textarea{
+            grid-area: textarea;
+        }
+        button{
+            grid-area:button ;
+        }
+        /* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5 {
+        height: auto; /* Allow height to adjust */
+        padding: 1rem; /* Add some padding */
+    }
+.container1{
+    padding-left: ;
+}
+    .images {
+        grid-template-areas: 
+            "image1"
+            "image2"
+            "image3"
+            "image4"; /* Stack images vertically */
+        gap: 20px; /* Reduced gap */
+        position: relative; /* Position relative for stacking */
+        right: 0; /* Reset position */
+        top: 0; /* Reset position */
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4 {
+        height: 2rem; /* Adjust image size */
+        width: 2rem; /* Adjust image size */
+        padding-left: 4rem;
+    }
+    h1{
+        padding-left: 3rem;
+    }
+    .line{
+        width: 16rem;
+    }
+
+    .box1,
+    .box3
+    
+    {
+        width: 90vw; /* Make boxes narrower */
+        height: auto; /* Allow height to adjust */
+        grid-template-areas: 
+            "h1"
+            "img1"
+            "p1"
+            "img2"
+            "p2"; /* Stack elements vertically */
+    }
+    .box2{
+        width: 90vw; /* Make boxes narrower */
+        height: auto; /* Allow height to adjust */
+        grid-template-areas: "h3 "
+                             "p3"
+                             "p4"
+                             "p5"
+                             "img3";
+    }
+    .box3{
+        width: 90vw; /* Make boxes narrower */
+        height: auto; /* Allow height to adjust */
+        grid-template-areas: "h33 h33 "
+                              "p6 p6"
+                              "img4 img5"
+                              "img6 img7";
+                             
+    }
+    
+
+    .img1,
+    .img2,
+    .img3 {
+        height: 20vh; /* Adjust image size for mobile */
+        width: auto; /* Maintain aspect ratio */
+    }
+    .img1,.img2{
+        width: 15rem;
+    }
+    .img3{
+        height: 10rem;
+    }
+
+    .h1, .h3, .h33, .h34 {
+        font-size: 1.2rem; /* Smaller font for headers */
+    }
+
+    .para, .p1, .p2, .p3, .p4, .p5, .p6, .p7 {
+        font-size: 1rem; /* Smaller font for paragraphs */
+    }
+
+    textarea {
+        width: 100%; /* Full width for textarea */
+    }
+
+    button {
+        width: 100%; /* Full width for button */
+        padding: 0.5rem; /* Add some padding */
+    }
+}
+
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container1">
+    <div>
+        <h1>POP DESIGN</h1>
+        <img src="underline.png" alt="" class="line">
+        <p class="para">New html template with pop up pages and use this layout for your website</p>
+        <div class="images">
+        <img src="home.jpg" alt="" class="image1">
+        <img src="team2.png" alt="" class="image2">
+        <img src="shakehand.jpg" alt="" class="image3">
+        <img src="contact.png" alt="" class="image4">
+    </div>
+    </div>
+    </div>
+    <div class="container2">
+        <div class="box1">
+            <h3>Welcome to pop design</h3>
+            <img src="welcome-1.jpg" alt="" class="img1">
+            <p class="p1">Donac eu lectus ligula. Aenean pulvinar dolor et massa lacinia rhoncus sit amet sed maurls. Aliwuam dictum nibh et consequat finibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. in magna mauris, malesuada ut diam ey, pelientasque fringilla or</p>
+            <img src="welcome-2.jpg" alt="" class="img2">
+            <p class="p2">You can feel free to use this template for your websites. Please tell your friends about Tooplate website. Thank you
+                vivamus placerat in nunc eget volupat , etlam tincidunt blamdit saplen, sed posure enim.ut eget ornare lectus</p>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="box2">
+            <h3 class="h3">Background of our time</h3>
+            <p class="p3">Vestibulum aliquet, arct acctmsan lobortis bibe dum,justo velit efficitur lorem, at pulvinear mi justo nec lacus. Nullam et libero aliquet, luctus nunc sit amet, tincidunt ligula. Sed finibus ante sed tortor cursus, nec malesuada lectus interdum.</p>
+            <p class="p4">Sed ex turpis, vulputate in efficitur id, lobortis eget nibh. Pellentesque maximum ipsum eget velit imperdiet sodales. Suspendisse in blandit ml.</p>
+            <p class="p5">Pellentesque finibus fells risus, ut malesuada fells viversa at. Quiaque accumsan in mi non hendrerit.</p>
+            <img src="team.jpg" alt="" class="img3">
+        </div>
+    </div>
+    <div class="container4">
+        <div class="box3">
+            <h3 class="h33">Our work</h3>
+            <p class="p6">Aliquam intedum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum torter, vel rhoncus libero. Integer at lacus velit. Nullam dapibus venenatis placerat.</p>
+            <img src="gallery-img-01-tn.jpg" alt="" class="img4">
+            <img src="gallery-img-02-tn.jpg" alt="" class="img5">
+            <img src="gallery-img-03-tn.jpg" alt="" class="img6">
+            <img src="gallery-img-04-tn.jpg" alt="" class="img7">
+        </div>
+    </div>
+    <div class="container5">
+        <div class="box4">
+            <h3 class="h34">Contact us</h3>
+            <p class="p7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam interdum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendissea dictum torter, vel rhoncus libero</p>
+            <form action="">
+            <input type="text" name="" id="inp1" placeholder="Name">
+            <input type="text" name="" id="inp2" placeholder="Email">
+            <textarea rows="3" cols="25">
+            </textarea>
+            <button>submit</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
